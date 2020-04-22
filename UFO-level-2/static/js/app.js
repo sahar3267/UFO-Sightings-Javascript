@@ -40,7 +40,7 @@ const handleClick = () => {
     if (shape){
         filteredData = filteredData.filter(row => row.shape == shape)
     } 
-    buildTable(tableData)
+    buildTable(filteredData)
 }     
 buildTable(tableData)
 d3.selectAll('#filter-btn').on('click', handleClick)    
